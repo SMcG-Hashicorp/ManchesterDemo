@@ -47,7 +47,7 @@ data "vsphere_compute_cluster" "Lab-Cluster" {
 #  datacenter_id = "${data.vsphere_datacenter.VM-Lab.id}"
 #}
 
-resource "vsphere_folder" "VM-lab" {
+resource "vsphere_folder" "VM-Lab" {
      path          = "VM-Lab-Manchester-02"
      type          = "vm"
      datacenter_id = "${data.vsphere_datacenter.VM-Lab.id}"
